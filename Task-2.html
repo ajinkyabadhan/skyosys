@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Skyosys Webpage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+	<!-- font awesome icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="d-flex flex-column">
+	<!--display flex direction column-->
+	<header>
+		<div class="container-fluid mt-2">
+			<!--margin top 2-->
+			<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+				<!--expand large fixed dark theme-->
+				<a class="navbar-brand" href="#">Skyosys</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!--Mobile optimised-->
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<!--margin left auto-->
+						<li class="nav-item">
+							<a href="#home" class="nav-link active">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="#about" class="nav-link">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="#services" class="nav-link">Services</a>
+						</li>
+						<li class="nav-item">
+							<a href="#contact" class="nav-link">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+	</header>
+
+	<div class="home d-flex align-items-center p-4" id="home">
+		<!--home own class padding 4-->
+		<div class="container-fluid">
+			<div class="row">
+				<!--direction of grid-->
+				<div class="col-lg-6 d-flex flex-column justify-content-center pt-5">
+					<!--col large 6 padding top 5-->
+					<p class="font-weight-bolder display-4">Want to take your business online?</p>
+					<p>Voila!! We at Skyosys love working with growing businesses that are modern, adaptive and think
+						outside the box.</p>
+					<div>
+						<button type="button" class="btn btn-success">Get Started</button>
+						<!--success green, primary blue, dark black-->
+					</div>
+				</div>
+				<div class="col-lg-6 p-5">
+					<!--col large 6 padding 5-->
+					<img src="./img1.png" class="img-fluid">
+					<!--img fluid for responsive-->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section id="about" class="about p-5">
+		<!--about own class padding 5-->
+		<div class="container-fluid">
+			<header class="mt-5 mb-3">
+				<!--margin top 5 margin bottom 3-->
+				<h1 id="heading">ABOUT US</h1>
+			</header>
+
+			<div class="row">
+				<div class="col-lg-6 d-flex align-items-center p-5">
+					<img src="avtar.jpg" class="img-fluid">
+				</div>
+
+				<div class="col-lg-6 d-flex flex-column justify-content-center">
+					<ul class="list-unstyled">
+						<!--list without bullets-->
+						<li class="aboutus_text p-2">
+							<!--about us text own class padding 2-->
+							<i class="fa fa-check-square"></i>
+							<!--font awesome own check square-->
+							Voila!! We at Skyosys love working with growing businesses that are modern, adaptive and
+							think outside the box.
+						</li>
+						<li class="aboutus_text p-2">
+							<i class="fa fa-check-square"></i>
+							Voila!! We at Skyosys love working with growing businesses that are modern, adaptive and
+							think outside the box.
+						</li>
+						<li class="aboutus_text p-2">
+							<i class="fa fa-check-square"></i>
+							Voila!! We at Skyosys love working with growing businesses that are modern, adaptive and
+							think outside the box.
+						</li>
+					</ul><br>
+					<div>
+						<button class="btn btn-success">Get Started</button>
+						<!--success green-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="services p-5" id="services">
+		<!--services own class padding 5-->
+		<div class="container-fluid">
+			<header class="text-center p-4 mb-5">
+				<!--padding 5 margin bottom 5-->
+				<h1 id="heading">SERVICES</h1>
+			</header>
+
+			<div class="d-flex justify-content-around">
+				<div class="row">
+					<div class="col-lg-4 pb-4">
+						<!--padding bottom 4 -->
+						<div class="card mx-3">
+							<!--card effect card size mx-->
+							<div class="card-body pb-5">
+								<!--card body contents-->
+								<h4 class="card-title">
+									<!--title of card-->
+									<i class="fa fa-desktop pb-4 fa-2x"></i>
+									<!--font awesome icon fa-2x icon size-->
+									<br>Web<br>Development
+								</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet,
+									consectetur adipiscing elit.Ut mollis
+									metus a felis sagittis ornare.</p><br>
+								<a href="#">> Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 pb-4">
+						<div class="card mx-3">
+							<div class="card-body pb-5">
+								<h4 class="card-title">
+									<i class="fa fa-mobile pb-4 fa-2x"></i><br>
+									Mobile App<br>Development
+								</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet,
+									consectetur adipiscing elit.Ut mollis
+									metus a felis sagittis ornare.</p><br>
+								<a href="#">> Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 pb-4">
+						<div class="card mx-3">
+							<div class="card-body pb-5">
+								<h4 class="card-title">
+									<i class="fa fa-anchor pb-4 fa-2x"></i><br>
+									Graphic<br> Designing
+								</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet,
+									consectetur adipiscing elit.Ut mollis
+									metus a felis sagittis ornare.</p><br>
+								<a href="#"> Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<div id="contact" class="contact p-3">
+		<!--contact own class-->
+		<div class="container-fluid">
+			<header class="text-center mt-5">
+				<!--margin top 5-->
+				<h1 id="heading">CONTACT US</h1>
+			</header>
+			<h4 class="text-center m-4" id="droptxt">Drop Us a Message</h4>
+			<!--margin 4-->
+			<form>
+				<div class="row">
+					<div class="d-flex justify-content-end w-50">
+						<!--width 50-->
+						<div class="col-md-6 p-4">
+							<!--col medium 6 padding 4-->
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Your Name*">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" placeholder="Your Email*">
+							</div>
+							<div class="form-group">
+								<input type="number" class="form-control" placeholder="Your Phone Number*">
+							</div>
+							<div class="form-group">
+								<button type="button" class="btn btn-success btn-lg shadow">Send Message</button>
+							</div>
+						</div>
+					</div>
+					<div class="w-50">
+						<!--width 50-->
+						<div class="col-md-6 p-4">
+							<div class="form-group">
+								<textarea name="txtMsg" id="txtMsg" class="form-control" rows="6"
+									placeholder="Your Message*"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<footer>
+			<div class="text-white bg-dark p-5">
+				<!--text color white backgrnd dark padding 5-->
+				<div class="container-fluid p-4">
+					<div class="row">
+						<div class="col-md-3">
+							<h4 class="skyosys">Skyosys</h4>
+							<!--own class-->
+							<p>Abhudaya Bank,<br>Airoli,<br>Sector-17.</p>
+						</div>
+						<hr class="w-100 clearfix d-md-none" />
+						<!--width 100 effect in mobile view only-->
+						<div class="col-md-3">
+							<h5>Useful Links</h5>
+							<p><a href="#home" class="text-white useful_link">Home</a>
+								<!--own class useful_link-->
+							</p>
+							<p><a href="#about" class="text-white useful_link">About</a>
+							</p>
+							<p><a href="#services" class="text-white useful_link">Services</a></p>
+							<p><a href="#contact" class="text-white useful_link">Contact
+								</a></p>
+						</div>
+						<hr class="w-100 clearfix d-md-none" />
+						<div class="col-md-3">
+							<h5>Services</h5>
+							<p><a href="#" class="text-white useful_link">Web Development</a></p>
+							<p><a href="#" class="text-white useful_link">Mobile App<br>Development</a></p>
+							<p><a href="#" class="text-white useful_link">Graphic Designing</a></p>
+						</div>
+						<hr class="w-100 clearfix d-md-none" />
+						<div class="col-md-3">
+							<h5>Contact Us</h5>
+							<p class="text-white">
+								Email: info@skyosys.com</p>
+							<p class="text-white">
+								Contact: 998756874</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="p-3">
+				<!--padding 3-->
+				<div class="row d-flex align-items-center">
+					<div class="col-md-7 col-lg-8 text-md-start">
+						<p class="pl-4">© CopyRight Skyosys. All Rights Reserved.</p>
+						<!--padding left 4-->
+					</div>
+					<div class="col-md-5 col-lg-4 text-center pl-5">
+						<a href="" class="h2 m-2"><span class="fa fa-whatsapp">
+								<!--heading h2 margin 2-->
+							</span></a>
+						<a href="" class="h2 m-2"><span class="fa fa-facebook">
+							</span></a>
+						<a href="" class="h2 m-2"><span class="fa fa-twitter">
+							</span></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+</body>
+
+</html>

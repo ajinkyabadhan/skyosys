@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    font-size: 130%;
+}
+
+.container-fluid .navbar .navbar-brand {
+    color: green;
+    font-size: 100%;
+    padding-left: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.home,
+.services {
+    background-color: #F48FB1;
+    background-size: cover;
+    width: 100%;
+}
+
+#heading {
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 55px;
+    text-align: center;
+}
+
+.aboutus_text {
+    font-size: 20px;
+    word-spacing: 8px;
+}
+
+.card {
+    box-shadow: 2px 4px 10px black;
+    border-radius: 10px;
+}
+
+#droptxt {
+    color: #228B22;
+}
+
+.skyosys {
+    color: green;
+    font-weight: bold;
+}
+
+.useful_link {
+    text-decoration: none;
+}
