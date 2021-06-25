@@ -72,3 +72,11 @@
 .skyosys {
     color: #dc09fc;
 }
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.active {
+    font-weight: bolder;
+}

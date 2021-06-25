@@ -9,7 +9,6 @@
 	<script src="./script.js"></script>
 
 	<!--Bootstrap-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -25,19 +24,20 @@
 			<!--margin top 2-->
 			<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
 				<!--expand large fixed dark theme-->
-				<a class="navbar-brand" href="./index.html">Skyosys</a>
-				<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+				<a class="navbar-brand ms-4" href="./index.html">Skyosys</a>
+				<button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse"
+					data-bs-target="#navbarCollapse">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<!--Mobile optimised-->
 
-				<div class="collapse navbar-collapse" id="navbarCollapse">
+				<div class="collapse navbar-collapse ms-4" id="navbarCollapse">
 					<div class="navbar-nav ms-auto">
 						<!--margin left auto-->
-						<a href="#home" id="link" class="nav-item nav-link mr-3">Home</a>
-						<a href="#about" id="link" class="nav-item nav-link mr-3">About</a>
-						<a href="#services" id="link" class="nav-item nav-link mr-3">Services</a>
-						<a href="#contact" id="link" class="nav-item nav-link">Contact</a>
+						<a href="#home" id="link" class="nav-item nav-link active me-3">Home</a>
+						<a href="#about" id="link" class="nav-item nav-link me-3">About</a>
+						<a href="#services" id="link" class="nav-item nav-link me-3">Services</a>
+						<a href="#contact" id="link" class="nav-item nav-link me-3">Contact</a>
 						</ul>
 					</div>
 				</div>
@@ -46,10 +46,9 @@
 
 	<div class="home p-5" id="home">
 		<div class="row">
-			<!--home own class padding 5 direction of grid-->
-			<div class="col-lg-7 d-flex flex-column justify-content-center pt-5 pl-4">
+			<div class="col-lg-7 d-flex flex-column justify-content-center pt-5 ps-4">
 				<!--col large 6 padding top 5-->
-				<p class="font-weight-bolder display-4">Want to take your business online?</p>
+				<p class="fw-bolder display-4">Want to take your business online?</p>
 				<p style="font-size: 1.25rem;">Voila!! We at Skyosys love working with growing businesses that are
 					modern, adaptive and think
 					outside the box.</p>
@@ -61,7 +60,7 @@
 			</div>
 			<div class="col-lg-5 pt-5 text-center">
 				<!--col large 6 padding 5-->
-				<img src="./img1.png" width="450" class="img-fluid">
+				<img src="./img1.png" class="img-fluid">
 				<!--img fluid for responsive-->
 			</div>
 		</div>
@@ -70,7 +69,7 @@
 	<section id="about" class="about p-5">
 		<!--about own class padding 5-->
 		<div class="container-fluid">
-			<header class="mt-1 mb-3">
+			<header class="mt-1 mb-4">
 				<!--margin top 5 margin bottom 3-->
 				<h1 id="heading">ABOUT US</h1>
 			</header>
@@ -170,7 +169,7 @@
 	<div id="contact" class="contact p-3">
 		<!--contact own class-->
 		<div class="container-fluid">
-			<header class="text-center mt-4">
+			<header class="text-center mt-5">
 				<!--margin top 5-->
 				<h1 id="heading">CONTACT US</h1>
 			</header>
@@ -180,33 +179,32 @@
 				<div class="row">
 					<div class="d-flex">
 						<div class="col-md-6 p-4">
-							<div class="form-group input-group-lg">
-								<input type="text" class="form-control" name="fullname" placeholder="Your Name*">
+							<div class="input-group">
+								<input type="text" class="form-control form-control-lg" name="fullname"
+									placeholder="Your Name*">
 							</div>
-							<div class="form-group input-group-lg">
-								<input type="email" class="form-control" name="email" placeholder="Your Email*">
+							<div class="input-group">
+								<input type="email" class="form-control form-control-lg" name="email"
+									placeholder="Your Email*">
 							</div>
-							<div class="form-group input-group-lg">
-								<input type="number" class="form-control" name="phone" placeholder="Your Phone Number*">
+							<div class="input-group">
+								<input type="number" class="form-control form-control-lg" name="phone"
+									placeholder="Your Phone Number*">
 							</div>
 						</div>
 
 						<div class="col-md-6 p-4">
-							<div class="form-group input-group-lg">
-								<textarea name="message" class="form-control" style="min-height: 175px;"
+							<div class="form-group">
+								<textarea name="message" class="form-control form-control-lg" style="min-height: 175px;"
 									placeholder="Your Message*"></textarea>
 							</div>
 						</div>
 					</div>
 
 					<div class="text-center mb-5">
-						<button type="submit" onclick="setValues()" class="btn btn-success btn-lg shadow">Send
+						<button type="submit" class="btn btn-success btn-lg shadow">Send
 							Message</button>
 					</div>
-
-					<script>
-						getValues();
-					</script>
 				</div>
 			</form>
 		</div>
@@ -255,9 +253,9 @@
 					<!--padding 3-->
 					<div class="d-flex">
 						<div class="col-xs-7">
-							<p class="ml-5">© CopyRight Skyosys. All Rights Reserved.</p>
+							<p class="ms-5">© CopyRight Skyosys. All Rights Reserved.</p>
 						</div>
-						<div class="col-xs-5 ms-auto mb-3 mr-5">
+						<div class="col-xs-5 ms-auto mb-3 me-5">
 							<a href="#" class="h2 m-2"><span class="fa fa-whatsapp"
 									style="font-size: 2rem; color: lightgreen;">
 									<!--heading h2 margin 2-->
