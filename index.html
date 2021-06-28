@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="./style.css">
-	<script src="./script.js"></script>
+	<script src="./filesaver.js"></script>
 
 	<!--Bootstrap-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -21,9 +21,7 @@
 	<!--display flex direction column-->
 	<header>
 		<div class="container-fluid">
-			<!--margin top 2-->
 			<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-				<!--expand large fixed dark theme-->
 				<a class="navbar-brand ms-4" href="./index.html">Skyosys</a>
 				<button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse"
 					data-bs-target="#navbarCollapse">
@@ -33,7 +31,7 @@
 
 				<div class="collapse navbar-collapse ms-4" id="navbarCollapse">
 					<div class="navbar-nav ms-auto">
-						<!--margin left auto-->
+						<!--margin start auto-->
 						<a href="#home" id="link" class="nav-item nav-link active me-3">Home</a>
 						<a href="#about" id="link" class="nav-item nav-link me-3">About</a>
 						<a href="#services" id="link" class="nav-item nav-link me-3">Services</a>
@@ -47,7 +45,7 @@
 	<div class="home p-5" id="home">
 		<div class="row">
 			<div class="col-lg-7 d-flex flex-column justify-content-center pt-5 ps-4">
-				<!--col large 6 padding top 5-->
+				<!--col large 7 padding top 5 padding start 4-->
 				<p class="fw-bolder display-4">Want to take your business online?</p>
 				<p style="font-size: 1.25rem;">Voila!! We at Skyosys love working with growing businesses that are
 					modern, adaptive and think
@@ -59,7 +57,7 @@
 				</div>
 			</div>
 			<div class="col-lg-5 pt-5 text-center">
-				<!--col large 6 padding 5-->
+				<!--col large 5 padding 5-->
 				<img src="./img1.png" class="img-fluid">
 				<!--img fluid for responsive-->
 			</div>
@@ -70,7 +68,7 @@
 		<!--about own class padding 5-->
 		<div class="container-fluid">
 			<header class="mt-1 mb-4">
-				<!--margin top 5 margin bottom 3-->
+				<!--margin top 1 margin bottom 4-->
 				<h1 id="heading">ABOUT US</h1>
 			</header>
 
@@ -83,9 +81,9 @@
 					<ul class="list-unstyled">
 						<!--list without bullets-->
 						<li class="aboutus_text p-2">
-							<!--about us text own class padding 2-->
+							<!--aboutus_text own class padding 2-->
 							<i class="fa fa-check-square"></i>
-							<!--font awesome own check square-->
+							<!--font awesome check square icon-->
 							Voila!! We at Skyosys love working with growing businesses that are modern, adaptive and
 							think outside the box.
 						</li>
@@ -102,7 +100,7 @@
 					</ul><br>
 					<div>
 						<button class="btn btn-primary">Get Started</button>
-						<!--success green-->
+						<!--primary blue-->
 					</div>
 				</div>
 			</div>
@@ -113,7 +111,7 @@
 		<!--services own class padding 5-->
 		<div class="container-fluid">
 			<header class="text-center p-4 mb-5">
-				<!--padding 5 margin bottom 5-->
+				<!--padding 4 margin bottom 5-->
 				<h1 id="heading">SERVICES</h1>
 			</header>
 
@@ -122,7 +120,7 @@
 					<div class="col-lg-4 pb-4">
 						<!--padding bottom 4 -->
 						<div class="card mx-3">
-							<!--card effect card size mx-->
+							<!--card effect margin start-end 3-->
 							<div class="card-body pb-5">
 								<!--card body contents-->
 								<h4 class="card-title">
@@ -131,8 +129,7 @@
 									<!--font awesome icon fa-2x icon size-->
 									<br>Web<br>Development
 								</h4>
-								<p class="card-text">Lorem ipsum dolor sit amet,
-									consectetur adipiscing elit.Ut mollis
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut mollis
 									metus a felis sagittis ornare.</p><br>
 								<a href="#" class="text-decoration-none">→ Learn More</a>
 							</div>
@@ -202,9 +199,24 @@
 					</div>
 
 					<div class="text-center mb-5">
-						<button type="submit" class="btn btn-success btn-lg shadow">Send
+						<button type="submit" onclick="setValues();" class="btn btn-success btn-lg shadow">Send
 							Message</button>
 					</div>
+
+					<script>
+						function setValues() {
+							let fullname = document.getElementsByName('fullname')[0].value;
+
+							let data =
+								fullname + '\n' +
+								document.getElementsByName('email')[0].value + '\n' +
+								document.getElementsByName('phone')[0].value + '\n\n' +
+								document.getElementsByName('message')[0].value;
+
+							var blob = new Blob([data], {type: "text/plain;charset=utf-8" });
+							saveAs(blob, fullname + ".txt");
+						}
+					</script>
 				</div>
 			</form>
 		</div>
@@ -212,11 +224,11 @@
 		<div style="margin: -16px;">
 			<footer class="text-white mt-4" style="background-color: #141414;">
 				<div class="p-5">
-					<!--text color white backgrnd dark padding 5-->
+					<!--text color white padding 5-->
 					<div class="row">
 						<div class="col-md-3">
 							<h4 class="skyosys">Skyosys</h4>
-							<!--own class-->
+							<!--skyosys own class-->
 							<p>Abhudaya Bank,<br>Airoli,<br>Sector-17.</p>
 						</div>
 						<hr class="w-100 clearfix d-md-none" />
@@ -250,7 +262,7 @@
 				<hr style="color: white; height: 2px;">
 
 				<div class="pt-2">
-					<!--padding 3-->
+					<!--padding top 2-->
 					<div class="d-flex">
 						<div class="col-xs-7">
 							<p class="ms-5">© CopyRight Skyosys. All Rights Reserved.</p>
