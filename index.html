@@ -6,7 +6,27 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="./style.css">
-	<script src="./filesaver.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+	<script>
+		function SubForm() {
+			alert("welcome");
+			$.ajax({
+				url: "https://api.apispreadsheets.com/data/14817/",
+				type: "post",
+				data: $("#myForm").serializeArray(),
+				success: function () {
+					alert("Form Data Submitted :)")
+				},
+				error: function () {
+					alert("There was an error :(")
+				}
+			});
+
+			alert("thank you");
+		}
+	</script>
 
 	<!--Bootstrap-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -172,51 +192,35 @@
 			</header>
 			<h4 class="text-center m-4" id="droptxt">Drop Us a Message</h4>
 			<!--margin 4-->
-			<form>
+			<form id="myForm">
 				<div class="row">
 					<div class="d-flex">
 						<div class="col-md-6 p-4">
 							<div class="input-group">
-								<input type="text" class="form-control form-control-lg" name="fullname"
+								<input type="text" class="form-control form-control-lg" name="Name"
 									placeholder="Your Name*">
 							</div>
 							<div class="input-group">
-								<input type="email" class="form-control form-control-lg" name="email"
+								<input type="email" class="form-control form-control-lg" name="Email"
 									placeholder="Your Email*">
 							</div>
 							<div class="input-group">
-								<input type="number" class="form-control form-control-lg" name="phone"
+								<input type="number" class="form-control form-control-lg" name="Phone"
 									placeholder="Your Phone Number*">
 							</div>
 						</div>
 
 						<div class="col-md-6 p-4">
 							<div class="form-group">
-								<textarea name="message" class="form-control form-control-lg" style="min-height: 175px;"
+								<textarea name="Message" class="form-control form-control-lg" style="min-height: 175px;"
 									placeholder="Your Message*"></textarea>
 							</div>
 						</div>
 					</div>
 
 					<div class="text-center mb-5">
-						<button type="submit" onclick="setValues();" class="btn btn-success btn-lg shadow">Send
-							Message</button>
+						<button onclick="SubForm()" class="btn btn-success btn-lg shadow">Send Message</button>
 					</div>
-
-					<script>
-						function setValues() {
-							let fullname = document.getElementsByName('fullname')[0].value;
-
-							let data =
-								fullname + '\n' +
-								document.getElementsByName('email')[0].value + '\n' +
-								document.getElementsByName('phone')[0].value + '\n\n' +
-								document.getElementsByName('message')[0].value;
-
-							var blob = new Blob([data], {type: "text/plain;charset=utf-8" });
-							saveAs(blob, fullname + ".txt");
-						}
-					</script>
 				</div>
 			</form>
 		</div>
